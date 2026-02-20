@@ -27,9 +27,9 @@ size_t numberCompare(std::string s1, std::string s2) {
 }
 
 
-size_t strcmp_case_insensitive(std::string string1, std::string string2, bool skipSpaces = false, int maxCharacters = -1) {
-   std::string s1 = string1;
-   std::string s2 = string2;
+size_t strcmp_case_insensitive(std::string s1, std::string s2, bool skipSpaces = false, int maxCharacters = -1) {
+   // std::string s1 = string1;
+   // std::string s2 = string2;
 
    if (skipSpaces) {
       std::erase(s1, ' ');
