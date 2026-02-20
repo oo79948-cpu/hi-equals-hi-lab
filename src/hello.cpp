@@ -39,7 +39,7 @@ size_t strcmp_case_insensitive(std::string s1, std::string s2, bool skipSpaces =
    size_t size1 = s1.size();
    size_t size2 = s2.size();
    size_t minsize = size1 < size2 ? size1 : size2;
-   if (minsize > maxCharacters && maxCharacters >= 0) {
+   if (minsize >= maxCharacters && maxCharacters >= 0) {
       minsize = maxCharacters;
       size1 = size2 = minsize;
    }

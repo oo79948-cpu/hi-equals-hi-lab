@@ -4,11 +4,12 @@
 #include "src/hello.hpp"
 
 int main() {
+  std::string string1, string2, skipSpaces, answer;
+  int maxCharacters;
 
-  while (true) {
-    std::string string1, string2, skipSpaces, answer;
-    int maxCharacters;
-
+  //while (true) {
+    string1 = string2 = skipSpaces = answer = "";
+    maxCharacters = -1;
     std::cout << "Input the first string to compare: ";
     std::getline(std::cin, string1);
     std::cout << "Input the second string to compare: ";
@@ -23,9 +24,10 @@ int main() {
     if (skipSpaces == "Y" || skipSpaces == "y" ) { skipSpacesBool = true; }
 
     std::cout << "Result: "<< strcmp_case_insensitive(string1, string2, skipSpacesBool, maxCharacters) << std::endl;
-    std::cout << "Continue? Y/N: ";
-    std::cin >> answer;
+    //std::cout << "Continue? Y/N: ";
+    //std::cin >> answer;
 
-    if (answer == "N" || answer == "n") { break; }
-  }
+    //if (answer == "N" || answer == "n") { break; }
+    std::cout << std::flush;
+  //}
 }

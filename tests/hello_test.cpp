@@ -41,6 +41,10 @@ TEST_CASE( "returns 0 after 5 characters" ) {
     REQUIRE( strcmp_case_insensitive("keyboard", "keybog", false, 5) == 0 );
 }
 
+TEST_CASE( "returns 0 after 1 character" ) {
+    REQUIRE( strcmp_case_insensitive("a", "ab", false, 1) == 0 );
+}
+
 TEST_CASE( "returns 0 after 5 characters for short words with spaces" ) {
     REQUIRE( strcmp_case_insensitive("cat", "c a t", true, 5) == 0 );
 }
